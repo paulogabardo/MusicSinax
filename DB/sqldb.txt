@@ -1,0 +1,13 @@
+CREATE TABLE PUBLIC.MUSIC
+(id INTEGER IDENTITY PRIMARY KEY,
+nome VARCHAR(30) NOT NULL,
+banda VARCHAR(30) NOT NULL,
+duracao time NOT NULL) 
+
+insert into music 
+values(next value for music_sequence, 'nome musica', 'nome banda', '00:03:23')
+
+CREATE SEQUENCE PUBLIC.MUSIC_SEQUENCE START WITH 1 INCREMENT BY 1 
+
+C:\tecnologias_java\eclipseLuna\workspace\MusicGrgIT
+
